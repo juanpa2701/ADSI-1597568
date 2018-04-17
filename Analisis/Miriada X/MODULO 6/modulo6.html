@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="es"> 
+
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Mod06 Ejercicio P2P Opcional</title>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		
+		<!-- Bootstrap 3.3.6 -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+		<!-- JQuery UI 1.11.4 -->
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+		<!-- JQuery UI Touch Punch 0.2.3 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch.punch.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style type="text/css">
+			body{
+				background-color: #f51717;
+				color: #f6f7f9;
+				margin-top: 50px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+			<header>
+				<nav class="navbar navbar-default navbar-fixed-top">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+								<span class="sr-only">Menu</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="http://carlos-miriadax.neocities.org/" class="navbar-brand">Juan Pablo L</a>
+						</div>
+						<div class="collapse navbar-collapse" id="navbar-1">
+							<ul class="nav navbar-nav">
+								<li><a href="#">Welcome</a></li>
+								<li><a href="#">Featured</a></li>
+								<li><a href="#">People</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" rol="button">
+										Music <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Artist #1</a></li>
+										<li><a href="#">Artist #2</a></li>
+										<li><a href="#">Artist #3</a></li>
+										<li><a href="#">Artist #4</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Mixes</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Radio</a></li>
+							</ul>
+							<form action="" class="navbar-form navbar-right" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Buscar">
+								</div>
+							</form>
+						</div>
+					</div>
+				</nav>
+			</header>
+		</div>
+
+		<div class="container">
+			<h2>Menú desplegable</h2>
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" href="#collapse1">Music<span class="caret"></span></a>
+						</h4>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse">
+						<ul class="list-group">
+							<li class="list-group-item"><a href="#">Welcome</a></li>
+							<li class="list-group-item"><a href="#">Featured</a></li>
+							<li class="list-group-item"><a href="#">People</a></li>
+							<li class="list-group-item"><a href="#">Music</a></li>
+							<li class="list-group-item"><a href="#">Mixes</a></li>
+							<li class="list-group-item"><a href="#">Videos</a></li>
+							<li class="list-group-item"><a href="#">Radio</a></li>
+						</ul>
+						<div class="panel-footer">Carlos C</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<hr />
+			<h2>Ejercicio P2P opcional</h2>
+			<p>
+				Realizar un menú plegable (collapse) con una de sus opciones 'Music' desplegable (dropdown ) con bootstrap, para las siguientes opciones:
+			</p>
+			<ul>
+				<li>Welcome</li>
+				<li>Featured</li>
+				<li>People</li>
+				<li>Music</li>
+				<li>Mixes</li>
+				<li>Videos</li>
+				<li>Radio</li>
+			</ul>
+			<hr />
+			<p>NOTA: La primera parte del ejercicio, que es el menú superior con algún desplegable, no está en el adjunto porque la he añadido después al revisar los ejercicios de los compañeros. Yo pensaba que tan sólo era un menú desplegable, tal y como es la segunda parte de ejercicio.</p>
+			<hr />
+		</div>
+
+	</body>
+</html>
