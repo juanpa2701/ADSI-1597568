@@ -5,5 +5,17 @@
 */
 
 .number1, .number2 {
-    background-color: #33A8FF;
+    background-color: #AAB7B8;
+}
+
+body{
+    background-color: #A6ACAF;
+}
+
+.juan{
+    align-items: center;
+    display: flex;
+    margin: 10%;
+    flex-direction: column;
+    height: 100vh;
 }

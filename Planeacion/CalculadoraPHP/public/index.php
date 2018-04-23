@@ -6,7 +6,7 @@
         <title>calculator</title>
     </head>
     <body>
-      <form action="calc.php" method="get">
+        <form class="juan" action="calc.php" method="get">
           <input class="number1" type="number" name="number1">
         <br>
         <select name="operation">
