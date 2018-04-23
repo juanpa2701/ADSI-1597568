@@ -108,7 +108,11 @@ class calculator
   
   public function Div(): float 
   {
-    return $this->number1 / $this->number2;
+    if ($this->number2 !=0) {
+    return $this->number1 / $this->number2;}
+    else {
+       throw new \Exception('Error: The division  between zero is mathematically impossible', 404);
+    }
   }
   
   /**

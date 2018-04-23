@@ -4,6 +4,7 @@ require '../src/calculator.php';
 
 use CalculadoraPHP\calculator;
 
+try {
 /**
  * Get the number of number1
  */
@@ -24,6 +25,7 @@ $calc = new calculator();
 
 $calc->setNumber1($number1);
 $calc->setNumber2($number2);
+$message = NULL;
 
 if ($operation === 1) {
   $message = 'The sum between ' . $number1 . ' and ' . $number2 . ' is ' . $calc->Sum();
@@ -47,12 +49,22 @@ if ($operation === 1) {
   $message = 'The square root of the ' . $number1 . ' and ' . $number2 . ' is ' . $calc->square();
 } else if ($operation === 11) {
   $message = 'The root between ' . $number1 . ' and ' . $number2 . ' is ' . $calc->squarex();
-} else {
+}
+else {
   $message = 'Error: No operation selectd';
 }
-echo $message;
-/*echo 'Val 1: ' . $number1;
-echo '<br>';
-echo 'Val 2: ' . $number2;
-echo '<br>';
-echo 'operation: ' . $operation;*/
+
+} catch (Exception $exc) {
+    if ($exc->getCode()=== 404) {
+        $message = $exc->getMessage();
+    } else {
+        echo 'I\'m sorry, we have a problem<br>';
+        echo $exc->getMessage();
+        echo '<br>';
+        echo $exc->getTraceAsString();
+    }
+} finally {
+     if ($message !== NULL) {
+         require 'index.php';
+     }    
+}    

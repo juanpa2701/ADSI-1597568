@@ -6,10 +6,11 @@
         <title>calculator</title>
     </head>
     <body>
+       <h1>Juan Pablo's calculator</h1>
         <form class="juan" action="calc.php" method="get">
           <input class="number1" type="number" name="number1">
         <br>
-        <select name="operation">
+        <select class="options" name="operation">
           <option value="">Select your operation</option>  
           <option value="1">Sum</option>
           <option value="2">Subtract</option>
@@ -22,12 +23,15 @@
           <option value="9">Divide between zero</option>
           <option value="10">²&radic;x</option>
           <option value="11">y&radic;x</option>
-          
         </select>
         <br>
         <input class="number2" type="number" name="number2">
         <br>
         <button class="btn" type="submit">Operate</button>
       </form>
+        <p><?php if (isset($message)=== TRUE):?>
+        <?php echo $message ?> = opendir($dirname);
+          <?php endif ?>  
+        </p>  
     </body>
 </html>
